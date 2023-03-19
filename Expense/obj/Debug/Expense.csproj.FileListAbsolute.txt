@@ -1,0 +1,11 @@
+C:\Users\swacz\Desktop\Workspace\Expense\Expense\bin\Debug\Expense.exe.config
+C:\Users\swacz\Desktop\Workspace\Expense\Expense\bin\Debug\Expense.exe
+C:\Users\swacz\Desktop\Workspace\Expense\Expense\bin\Debug\Expense.pdb
+C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.csproj.AssemblyReference.cache
+C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.csproj.SuggestedBindingRedirects.cache
+C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.Form1.resources
+C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.Properties.Resources.resources
+C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.csproj.GenerateResource.cache
+C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.csproj.CoreCompileInputs.cache
+C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.exe
+C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.pdb
