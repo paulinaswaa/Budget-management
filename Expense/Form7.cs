@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Expense
 {
-    public partial class Form6 : Form
+    public partial class Form7 : Form
     {
-        public Form6()
+        public Form7()
         {
             InitializeComponent();
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
