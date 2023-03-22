@@ -14,3 +14,4 @@ C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.Form3.resourc
 C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.Form4.resources
 C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.Form5.resources
 C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.Form6.resources
+C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.Form7.resources

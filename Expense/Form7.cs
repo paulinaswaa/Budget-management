@@ -47,7 +47,7 @@ namespace Expense
                 try
                 {
                     connection.Open();
-                    SqlCommand command = new SqlCommand("insert into tbl_User(User_Name, User_Date, User_Phone, User_Password, User_Adress)values (@USERN, @USERD, @USERP, @USERPW, @USERA", connection);
+                    SqlCommand command = new SqlCommand("insert into tbl_User(User_Name, User_Date, User_Phone, User_Password, User_Adress)values (@USERN, @USERD, @USERP, @USERPW, @USERA)", connection);
                     command.Parameters.AddWithValue("@USERN", usernameadd.Text);
                     command.Parameters.AddWithValue("@USERD", dateadd.Value.Date);
                     command.Parameters.AddWithValue("@USERP", phoneadd.Text);
