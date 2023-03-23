@@ -46,20 +46,20 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.incomename = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.incomeamount = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.incomedescription = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.incomecategories = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.incomedate = new System.Windows.Forms.DateTimePicker();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -127,6 +127,7 @@
             this.label6.Size = new System.Drawing.Size(79, 21);
             this.label6.TabIndex = 11;
             this.label6.Text = "Expense ";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -137,6 +138,7 @@
             this.label5.Size = new System.Drawing.Size(115, 21);
             this.label5.TabIndex = 10;
             this.label5.Text = "View Expense";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -147,6 +149,7 @@
             this.label4.Size = new System.Drawing.Size(106, 21);
             this.label4.TabIndex = 9;
             this.label4.Text = "View Income";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -167,6 +170,7 @@
             this.label2.Size = new System.Drawing.Size(91, 21);
             this.label2.TabIndex = 7;
             this.label2.Text = "Dashboard";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox4
             // 
@@ -227,6 +231,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 59;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox6
             // 
@@ -261,13 +266,33 @@
             this.panel1.Size = new System.Drawing.Size(220, 726);
             this.panel1.TabIndex = 57;
             // 
-            // textBox1
+            // label13
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(267, 170);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(271, 27);
-            this.textBox1.TabIndex = 85;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(71, 694);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(62, 21);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "Logout";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(12, 665);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(53, 49);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 12;
+            this.pictureBox8.TabStop = false;
+            // 
+            // incomename
+            // 
+            this.incomename.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.incomename.Location = new System.Drawing.Point(267, 170);
+            this.incomename.Name = "incomename";
+            this.incomename.Size = new System.Drawing.Size(271, 27);
+            this.incomename.TabIndex = 85;
             // 
             // label7
             // 
@@ -289,13 +314,13 @@
             this.label8.TabIndex = 88;
             this.label8.Text = "Amount";
             // 
-            // textBox2
+            // incomeamount
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.Location = new System.Drawing.Point(267, 277);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(271, 27);
-            this.textBox2.TabIndex = 87;
+            this.incomeamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.incomeamount.Location = new System.Drawing.Point(267, 277);
+            this.incomeamount.Name = "incomeamount";
+            this.incomeamount.Size = new System.Drawing.Size(271, 27);
+            this.incomeamount.TabIndex = 87;
             // 
             // label9
             // 
@@ -307,15 +332,15 @@
             this.label9.TabIndex = 92;
             this.label9.Text = "Categories";
             // 
-            // label10
+            // incomedescription
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Bahnschrift Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(264, 367);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(104, 22);
-            this.label10.TabIndex = 90;
-            this.label10.Text = "Description";
+            this.incomedescription.AutoSize = true;
+            this.incomedescription.Font = new System.Drawing.Font("Bahnschrift Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.incomedescription.Location = new System.Drawing.Point(264, 367);
+            this.incomedescription.Name = "incomedescription";
+            this.incomedescription.Size = new System.Drawing.Size(104, 22);
+            this.incomedescription.TabIndex = 90;
+            this.incomedescription.Text = "Description";
             // 
             // textBox4
             // 
@@ -326,14 +351,18 @@
             this.textBox4.Size = new System.Drawing.Size(271, 113);
             this.textBox4.TabIndex = 89;
             // 
-            // comboBox1
+            // incomecategories
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(643, 169);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(271, 28);
-            this.comboBox1.TabIndex = 93;
+            this.incomecategories.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.incomecategories.FormattingEnabled = true;
+            this.incomecategories.Items.AddRange(new object[] {
+            "Health",
+            "Food ",
+            "Entertainment "});
+            this.incomecategories.Location = new System.Drawing.Point(643, 169);
+            this.incomecategories.Name = "incomecategories";
+            this.incomecategories.Size = new System.Drawing.Size(271, 28);
+            this.incomecategories.TabIndex = 93;
             // 
             // label11
             // 
@@ -345,14 +374,14 @@
             this.label11.TabIndex = 94;
             this.label11.Text = "Date";
             // 
-            // dateTimePicker1
+            // incomedate
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(643, 281);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(271, 28);
-            this.dateTimePicker1.TabIndex = 95;
+            this.incomedate.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.incomedate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.incomedate.Location = new System.Drawing.Point(643, 281);
+            this.incomedate.Name = "incomedate";
+            this.incomedate.Size = new System.Drawing.Size(271, 28);
+            this.incomedate.TabIndex = 95;
             // 
             // button1
             // 
@@ -363,6 +392,7 @@
             this.button1.TabIndex = 96;
             this.button1.Text = "Save income";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label12
             // 
@@ -374,26 +404,6 @@
             this.label12.TabIndex = 97;
             this.label12.Text = "Income";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(71, 694);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 21);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "Logout";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(12, 665);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(53, 49);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 12;
-            this.pictureBox8.TabStop = false;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -401,16 +411,16 @@
             this.ClientSize = new System.Drawing.Size(1306, 726);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.incomedate);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.incomecategories);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.incomedescription);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.incomeamount);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.incomename);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.pictureBox17);
@@ -454,16 +464,16 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox incomename;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox incomeamount;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label incomedescription;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox incomecategories;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker incomedate;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;

@@ -178,6 +178,7 @@
             this.label5.Size = new System.Drawing.Size(115, 21);
             this.label5.TabIndex = 10;
             this.label5.Text = "View Expense";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -188,6 +189,7 @@
             this.label4.Size = new System.Drawing.Size(106, 21);
             this.label4.TabIndex = 9;
             this.label4.Text = "View Income";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -198,6 +200,7 @@
             this.label3.Size = new System.Drawing.Size(69, 22);
             this.label3.TabIndex = 8;
             this.label3.Text = "Income";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox5
             // 
@@ -246,6 +249,7 @@
             this.label2.Size = new System.Drawing.Size(91, 21);
             this.label2.TabIndex = 7;
             this.label2.Text = "Dashboard";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox6
             // 
@@ -274,6 +278,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 99;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // panel1
             // 

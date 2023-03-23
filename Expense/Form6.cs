@@ -30,6 +30,7 @@ namespace Expense
 
         }
         SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-HR20LU4;Initial Catalog=Expenses;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        public static string User;
         private void loginbutton_Click(object sender, EventArgs e)
         {
             connection.Open();
@@ -42,6 +43,7 @@ namespace Expense
             adapter.Fill(datatable);
             if (datatable.Rows[0][0].ToString()=="1")
             {
+                User = username.Text;
                 Form1 main = new Form1();
                 main.Show();
                 this.Hide();
@@ -57,6 +59,11 @@ namespace Expense
 
 
             connection.Close();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
