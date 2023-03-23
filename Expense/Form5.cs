@@ -31,7 +31,7 @@ namespace Expense
 
         private void label6_Click(object sender, EventArgs e)
         {
-            Form3 expense = new Form3();
+            expensename expense = new expensename();
             expense.Show();
             this.Hide();
         }
