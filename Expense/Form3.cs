@@ -50,37 +50,46 @@ namespace Expense
             main.Show();
             this.Hide();
         }
+        SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-HR20LU4;Initial Catalog=Expenses;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
 
+        private void Clear()
+        {
+            expname.Text = " ";
+            expenseamount.Text = " ";
+            expensedescription.Text = " ";
+            expensecategory.SelectedIndex = 0;
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            //if (expensename.Text == " " || incomeamount.Text == " " || incomecategories.SelectedIndex == -1 || incomedescription.Text == "")
-            //{
-            //    MessageBox.Show("Complete the data!");
-            //}
-            //else
-            //{
-            //    try
-            //    {
-            //        connection.Open();
-            //        SqlCommand command = new SqlCommand("insert into tbl_Income(Income_name, Income_Amount, Income_Category, Income_Date, Income_Description, Income_User)values (@IncomeName, @IncomeAmount, @IncomeCategory, @IncomeDate, @IncomeDescription, @IncomeUser)", connection);
-            //        command.Parameters.AddWithValue("@IncomeName", incomename.Text);
-            //        command.Parameters.AddWithValue("@IncomeAmount", incomeamount.Text);
-            //        command.Parameters.AddWithValue("@IncomeCategory", incomecategories.SelectedItem.ToString());
-            //        command.Parameters.AddWithValue("@IncomeDate", incomedate.Value.Date);
-            //        command.Parameters.AddWithValue("@IncomeDescription", incomedescription.Text);
-            //        command.Parameters.AddWithValue("@IncomeUser", Form6.User);
-            //        command.ExecuteNonQuery();
-            //        MessageBox.Show("Income added correctly!");
-            //        connection.Close();
-            //        Clear();
+            if (expname.Text == " " || expenseamount.Text == " " || expensecategory.SelectedIndex == -1 || expensedescription.Text == "")
+            {
+                MessageBox.Show("Complete the data!");
+            }
+            else
+            {
+                try
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand("insert into tbl_Expense(Expense_name, Expense_Amount, Expense_Category, Expense_Date, Expense_Description, Expense_User)values (@ExpenseName, @ExpenseAmount, @ExpenseCategory, @ExpenseDate, @ExpenseDescription, @ExpenseUser)", connection);
+                    command.Parameters.AddWithValue("@ExpenseName", expname.Text);
+                    command.Parameters.AddWithValue("@ExpenseAmount", expenseamount.Text);
+                    command.Parameters.AddWithValue("@ExpenseCategory", expensecategory.SelectedItem.ToString());
+                    command.Parameters.AddWithValue("@ExpenseDate", expensedate.Value.Date);
+                    command.Parameters.AddWithValue("@ExpenseDescription", expensedescription.Text);
+                    command.Parameters.AddWithValue("@ExpenseUser", Form6.User);
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Expense added correctly!");
+                    connection.Close();
+                    Clear();
 
                 }
-                //catch (Exception Ex)
-                //{
-                //    MessageBox.Show(Ex.Message);
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
 
-                //}
-        //    }
-        //}
+                }
+            }
+        }
     }
 }

@@ -48,7 +48,7 @@
             this.expenseamount = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.expname = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -115,6 +115,10 @@
             // 
             this.expensecategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.expensecategory.FormattingEnabled = true;
+            this.expensecategory.Items.AddRange(new object[] {
+            "Food",
+            "Health",
+            "Clothes"});
             this.expensecategory.Location = new System.Drawing.Point(646, 169);
             this.expensecategory.Name = "expensecategory";
             this.expensecategory.Size = new System.Drawing.Size(271, 28);
@@ -262,13 +266,13 @@
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
             // 
-            // textBox1
+            // expname
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(270, 170);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(271, 27);
-            this.textBox1.TabIndex = 103;
+            this.expname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.expname.Location = new System.Drawing.Point(270, 170);
+            this.expname.Name = "expname";
+            this.expname.Size = new System.Drawing.Size(271, 27);
+            this.expname.TabIndex = 103;
             // 
             // pictureBox7
             // 
@@ -412,7 +416,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.expenseamount);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.expname);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label7);
@@ -460,7 +464,7 @@
         private System.Windows.Forms.TextBox expenseamount;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox expname;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox4;

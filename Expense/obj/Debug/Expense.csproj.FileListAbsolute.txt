@@ -10,8 +10,8 @@ C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.csproj.CoreCo
 C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.exe
 C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.pdb
 C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.Form2.resources
-C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.Form3.resources
 C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.Form4.resources
 C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.Form5.resources
 C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.Form6.resources
 C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.Form7.resources
+C:\Users\swacz\Desktop\Workspace\Expense\Expense\obj\Debug\Expense.expensename.resources
