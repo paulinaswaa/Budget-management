@@ -47,18 +47,16 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.labelIncomeAmount = new System.Windows.Forms.Label();
+            this.labelIncomeTra = new System.Windows.Forms.Label();
+            this.labelIncomeDate = new System.Windows.Forms.Label();
+            this.labelExpenseDate = new System.Windows.Forms.Label();
+            this.labelExpenseTransa = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.labelMaximumExpense = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -89,6 +87,7 @@
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.labelExpenseAmount = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -314,89 +313,65 @@
             this.label7.Text = "Total Income";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label8
+            // labelIncomeAmount
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(280, 210);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 21);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Amount";
+            this.labelIncomeAmount.AutoSize = true;
+            this.labelIncomeAmount.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelIncomeAmount.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIncomeAmount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelIncomeAmount.Location = new System.Drawing.Point(280, 210);
+            this.labelIncomeAmount.Name = "labelIncomeAmount";
+            this.labelIncomeAmount.Size = new System.Drawing.Size(69, 21);
+            this.labelIncomeAmount.TabIndex = 14;
+            this.labelIncomeAmount.Text = "Amount";
             // 
-            // label9
+            // labelIncomeTra
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(280, 242);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 21);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Transactions";
+            this.labelIncomeTra.AutoSize = true;
+            this.labelIncomeTra.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelIncomeTra.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIncomeTra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelIncomeTra.Location = new System.Drawing.Point(280, 242);
+            this.labelIncomeTra.Name = "labelIncomeTra";
+            this.labelIncomeTra.Size = new System.Drawing.Size(105, 21);
+            this.labelIncomeTra.TabIndex = 15;
+            this.labelIncomeTra.Text = "Transactions";
             // 
-            // label10
+            // labelIncomeDate
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(313, 270);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 21);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "number";
+            this.labelIncomeDate.AutoSize = true;
+            this.labelIncomeDate.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelIncomeDate.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelIncomeDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelIncomeDate.Location = new System.Drawing.Point(343, 313);
+            this.labelIncomeDate.Name = "labelIncomeDate";
+            this.labelIncomeDate.Size = new System.Drawing.Size(153, 18);
+            this.labelIncomeDate.TabIndex = 17;
+            this.labelIncomeDate.Text = "Last Transaction Date";
             // 
-            // label11
+            // labelExpenseDate
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(343, 313);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(153, 18);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "Last Transaction Date";
+            this.labelExpenseDate.AutoSize = true;
+            this.labelExpenseDate.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelExpenseDate.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelExpenseDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelExpenseDate.Location = new System.Drawing.Point(343, 538);
+            this.labelExpenseDate.Name = "labelExpenseDate";
+            this.labelExpenseDate.Size = new System.Drawing.Size(153, 18);
+            this.labelExpenseDate.TabIndex = 23;
+            this.labelExpenseDate.Text = "Last Transaction Date";
             // 
-            // label12
+            // labelExpenseTransa
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(343, 538);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(153, 18);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "Last Transaction Date";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label13.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(313, 495);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 21);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "number";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label14.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(280, 467);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(105, 21);
-            this.label14.TabIndex = 21;
-            this.label14.Text = "Transactions";
+            this.labelExpenseTransa.AutoSize = true;
+            this.labelExpenseTransa.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelExpenseTransa.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelExpenseTransa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelExpenseTransa.Location = new System.Drawing.Point(280, 467);
+            this.labelExpenseTransa.Name = "labelExpenseTransa";
+            this.labelExpenseTransa.Size = new System.Drawing.Size(105, 21);
+            this.labelExpenseTransa.TabIndex = 21;
+            this.labelExpenseTransa.Text = "Transactions";
             // 
             // label16
             // 
@@ -440,17 +415,17 @@
             this.pictureBox10.TabIndex = 25;
             this.pictureBox10.TabStop = false;
             // 
-            // label15
+            // labelMaximumExpense
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label15.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(722, 195);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(69, 21);
-            this.label15.TabIndex = 26;
-            this.label15.Text = "Amount";
+            this.labelMaximumExpense.AutoSize = true;
+            this.labelMaximumExpense.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelMaximumExpense.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMaximumExpense.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelMaximumExpense.Location = new System.Drawing.Point(722, 195);
+            this.labelMaximumExpense.Name = "labelMaximumExpense";
+            this.labelMaximumExpense.Size = new System.Drawing.Size(69, 21);
+            this.labelMaximumExpense.TabIndex = 26;
+            this.labelMaximumExpense.Text = "Amount";
             // 
             // label17
             // 
@@ -784,12 +759,25 @@
             this.pictureBox20.TabIndex = 55;
             this.pictureBox20.TabStop = false;
             // 
+            // labelExpenseAmount
+            // 
+            this.labelExpenseAmount.AutoSize = true;
+            this.labelExpenseAmount.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelExpenseAmount.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelExpenseAmount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelExpenseAmount.Location = new System.Drawing.Point(280, 435);
+            this.labelExpenseAmount.Name = "labelExpenseAmount";
+            this.labelExpenseAmount.Size = new System.Drawing.Size(69, 21);
+            this.labelExpenseAmount.TabIndex = 57;
+            this.labelExpenseAmount.Text = "Amount";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1306, 726);
+            this.Controls.Add(this.labelExpenseAmount);
             this.Controls.Add(this.label36);
             this.Controls.Add(this.label37);
             this.Controls.Add(this.pictureBox20);
@@ -820,18 +808,16 @@
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.labelMaximumExpense);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.labelExpenseDate);
+            this.Controls.Add(this.labelExpenseTransa);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.labelIncomeDate);
+            this.Controls.Add(this.labelIncomeTra);
+            this.Controls.Add(this.labelIncomeAmount);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
@@ -840,6 +826,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
@@ -886,18 +873,16 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label labelIncomeAmount;
+        private System.Windows.Forms.Label labelIncomeTra;
+        private System.Windows.Forms.Label labelIncomeDate;
+        private System.Windows.Forms.Label labelExpenseDate;
+        private System.Windows.Forms.Label labelExpenseTransa;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label labelMaximumExpense;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox11;
@@ -930,6 +915,7 @@
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.Label labelExpenseAmount;
     }
 }
 
