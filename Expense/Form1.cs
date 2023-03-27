@@ -29,7 +29,10 @@ namespace Expense
             minIncome();
             balance();
             categoryIncome();
-            categoryExpense();        }
+            categoryExpense();
+            worstCategoryExpense();
+            worstCategoryIncome();
+        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -265,6 +268,32 @@ namespace Expense
             DataTable datatable = new DataTable();
             adapter.Fill(datatable);
             labelExpenseCategory.Text = datatable.Rows[0][0].ToString();
+
+            connection.Close();
+
+        }
+
+        private void worstCategoryIncome()
+        {
+            connection.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter("SELECT Income_Category FROM tbl_Income WHERE Income_User = @USERNAME AND Income_Amount = (SELECT MIN(Income_Amount) FROM tbl_Income WHERE Income_User = @USERNAME)", connection);
+            adapter.SelectCommand.Parameters.AddWithValue("@username", Form6.User);
+            DataTable datatable = new DataTable();
+            adapter.Fill(datatable);
+            labelWorstIncome.Text = datatable.Rows[0][0].ToString();
+
+            connection.Close();
+
+        }
+
+        private void worstCategoryExpense()
+        {
+            connection.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter("SELECT Expense_Category FROM tbl_Expense WHERE Expense_User = @USERNAME AND Expense_Amount = (SELECT MIN(Expense_Amount) FROM tbl_Expense WHERE Expense_User = @USERNAME)", connection);
+            adapter.SelectCommand.Parameters.AddWithValue("@username", Form6.User);
+            DataTable datatable = new DataTable();
+            adapter.Fill(datatable);
+            labelWorstExpense.Text = datatable.Rows[0][0].ToString();
 
             connection.Close();
 

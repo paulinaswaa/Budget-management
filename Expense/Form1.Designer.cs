@@ -78,16 +78,16 @@
             this.labelLastExpense = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.labelExpenseCategory = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.labelExpenseAmount = new System.Windows.Forms.Label();
+            this.labelWorstExpense = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.labelWorstIncome = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -107,8 +107,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             this.SuspendLayout();
             // 
@@ -659,39 +659,6 @@
             this.pictureBox17.TabIndex = 37;
             this.pictureBox17.TabStop = false;
             // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label32.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label32.Location = new System.Drawing.Point(723, 649);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(56, 21);
-            this.label32.TabIndex = 53;
-            this.label32.Text = "Month";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label33.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label33.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label33.Location = new System.Drawing.Point(680, 612);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(148, 24);
-            this.label33.TabIndex = 51;
-            this.label33.Text = "The best month";
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.BackColor = System.Drawing.Color.DimGray;
-            this.pictureBox18.Location = new System.Drawing.Point(608, 598);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(305, 84);
-            this.pictureBox18.TabIndex = 52;
-            this.pictureBox18.TabStop = false;
-            // 
             // labelExpenseCategory
             // 
             this.labelExpenseCategory.AutoSize = true;
@@ -726,39 +693,6 @@
             this.pictureBox19.TabIndex = 49;
             this.pictureBox19.TabStop = false;
             // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label36.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label36.Location = new System.Drawing.Point(1071, 649);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(56, 21);
-            this.label36.TabIndex = 56;
-            this.label36.Text = "Month";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label37.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label37.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label37.Location = new System.Drawing.Point(1032, 612);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(161, 24);
-            this.label37.TabIndex = 54;
-            this.label37.Text = "The worst month";
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.BackColor = System.Drawing.Color.DimGray;
-            this.pictureBox20.Location = new System.Drawing.Point(956, 598);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(305, 84);
-            this.pictureBox20.TabIndex = 55;
-            this.pictureBox20.TabStop = false;
-            // 
             // labelExpenseAmount
             // 
             this.labelExpenseAmount.AutoSize = true;
@@ -771,19 +705,85 @@
             this.labelExpenseAmount.TabIndex = 57;
             this.labelExpenseAmount.Text = "Amount";
             // 
+            // labelWorstExpense
+            // 
+            this.labelWorstExpense.AutoSize = true;
+            this.labelWorstExpense.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelWorstExpense.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWorstExpense.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelWorstExpense.Location = new System.Drawing.Point(722, 649);
+            this.labelWorstExpense.Name = "labelWorstExpense";
+            this.labelWorstExpense.Size = new System.Drawing.Size(69, 21);
+            this.labelWorstExpense.TabIndex = 60;
+            this.labelWorstExpense.Text = "Amount";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label9.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(661, 612);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(231, 24);
+            this.label9.TabIndex = 58;
+            this.label9.Text = "Worst Expense Category";
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BackColor = System.Drawing.Color.DimGray;
+            this.pictureBox18.Location = new System.Drawing.Point(608, 598);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(305, 84);
+            this.pictureBox18.TabIndex = 59;
+            this.pictureBox18.TabStop = false;
+            // 
+            // labelWorstIncome
+            // 
+            this.labelWorstIncome.AutoSize = true;
+            this.labelWorstIncome.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelWorstIncome.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWorstIncome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelWorstIncome.Location = new System.Drawing.Point(1070, 649);
+            this.labelWorstIncome.Name = "labelWorstIncome";
+            this.labelWorstIncome.Size = new System.Drawing.Size(69, 21);
+            this.labelWorstIncome.TabIndex = 63;
+            this.labelWorstIncome.Text = "Amount";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label11.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Location = new System.Drawing.Point(1007, 612);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(221, 24);
+            this.label11.TabIndex = 61;
+            this.label11.Text = "Worst Income Category";
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.BackColor = System.Drawing.Color.DimGray;
+            this.pictureBox20.Location = new System.Drawing.Point(956, 598);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(305, 84);
+            this.pictureBox20.TabIndex = 62;
+            this.pictureBox20.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1306, 726);
-            this.Controls.Add(this.labelExpenseAmount);
-            this.Controls.Add(this.label36);
-            this.Controls.Add(this.label37);
+            this.Controls.Add(this.labelWorstIncome);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox20);
-            this.Controls.Add(this.label32);
-            this.Controls.Add(this.label33);
+            this.Controls.Add(this.labelWorstExpense);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox18);
+            this.Controls.Add(this.labelExpenseAmount);
             this.Controls.Add(this.labelExpenseCategory);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.pictureBox19);
@@ -847,8 +847,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -904,18 +904,18 @@
         private System.Windows.Forms.Label labelLastExpense;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.Label labelExpenseCategory;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.PictureBox pictureBox21;
         private System.Windows.Forms.Label labelExpenseAmount;
+        private System.Windows.Forms.Label labelWorstExpense;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.Label labelWorstIncome;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox20;
     }
 }
 
