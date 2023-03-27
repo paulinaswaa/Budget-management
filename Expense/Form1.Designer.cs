@@ -66,7 +66,7 @@
             this.labelMinExpense = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.label24 = new System.Windows.Forms.Label();
+            this.labelIncomeCategory = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.labelBalance = new System.Windows.Forms.Label();
@@ -81,7 +81,7 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.label34 = new System.Windows.Forms.Label();
+            this.labelExpenseCategory = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.label36 = new System.Windows.Forms.Label();
@@ -526,17 +526,17 @@
             this.pictureBox13.TabIndex = 31;
             this.pictureBox13.TabStop = false;
             // 
-            // label24
+            // labelIncomeCategory
             // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label24.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label24.Location = new System.Drawing.Point(1070, 536);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(69, 21);
-            this.label24.TabIndex = 47;
-            this.label24.Text = "Amount";
+            this.labelIncomeCategory.AutoSize = true;
+            this.labelIncomeCategory.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelIncomeCategory.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIncomeCategory.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelIncomeCategory.Location = new System.Drawing.Point(1070, 536);
+            this.labelIncomeCategory.Name = "labelIncomeCategory";
+            this.labelIncomeCategory.Size = new System.Drawing.Size(69, 21);
+            this.labelIncomeCategory.TabIndex = 47;
+            this.labelIncomeCategory.Text = "Amount";
             // 
             // label25
             // 
@@ -692,17 +692,17 @@
             this.pictureBox18.TabIndex = 52;
             this.pictureBox18.TabStop = false;
             // 
-            // label34
+            // labelExpenseCategory
             // 
-            this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label34.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label34.Location = new System.Drawing.Point(374, 649);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(69, 21);
-            this.label34.TabIndex = 50;
-            this.label34.Text = "Amount";
+            this.labelExpenseCategory.AutoSize = true;
+            this.labelExpenseCategory.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelExpenseCategory.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelExpenseCategory.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelExpenseCategory.Location = new System.Drawing.Point(374, 649);
+            this.labelExpenseCategory.Name = "labelExpenseCategory";
+            this.labelExpenseCategory.Size = new System.Drawing.Size(69, 21);
+            this.labelExpenseCategory.TabIndex = 50;
+            this.labelExpenseCategory.Text = "Amount";
             // 
             // label35
             // 
@@ -784,10 +784,10 @@
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.pictureBox18);
-            this.Controls.Add(this.label34);
+            this.Controls.Add(this.labelExpenseCategory);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.pictureBox19);
-            this.Controls.Add(this.label24);
+            this.Controls.Add(this.labelIncomeCategory);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.labelBalance);
@@ -892,7 +892,7 @@
         private System.Windows.Forms.Label labelMinExpense;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label labelIncomeCategory;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label labelBalance;
@@ -907,7 +907,7 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label labelExpenseCategory;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.Label label36;
