@@ -57,8 +57,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
+            this.label_expense = new System.Windows.Forms.Label();
+            this.label_expense_title = new System.Windows.Forms.Label();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -368,29 +368,29 @@
             this.label7.TabIndex = 104;
             this.label7.Text = "Expense name";
             // 
-            // label30
+            // label_expense
             // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label30.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label30.Location = new System.Drawing.Point(1112, 121);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(69, 21);
-            this.label30.TabIndex = 102;
-            this.label30.Text = "Amount";
+            this.label_expense.AutoSize = true;
+            this.label_expense.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label_expense.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_expense.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label_expense.Location = new System.Drawing.Point(1112, 121);
+            this.label_expense.Name = "label_expense";
+            this.label_expense.Size = new System.Drawing.Size(69, 21);
+            this.label_expense.TabIndex = 102;
+            this.label_expense.Text = "Amount";
             // 
-            // label31
+            // label_expense_title
             // 
-            this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label31.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label31.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label31.Location = new System.Drawing.Point(1085, 88);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(134, 24);
-            this.label31.TabIndex = 100;
-            this.label31.Text = "Total expense";
+            this.label_expense_title.AutoSize = true;
+            this.label_expense_title.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label_expense_title.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_expense_title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label_expense_title.Location = new System.Drawing.Point(1085, 88);
+            this.label_expense_title.Name = "label_expense_title";
+            this.label_expense_title.Size = new System.Drawing.Size(134, 24);
+            this.label_expense_title.TabIndex = 100;
+            this.label_expense_title.Text = "Total expense";
             // 
             // pictureBox17
             // 
@@ -420,13 +420,14 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label30);
-            this.Controls.Add(this.label31);
+            this.Controls.Add(this.label_expense);
+            this.Controls.Add(this.label_expense_title);
             this.Controls.Add(this.pictureBox17);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "expensename";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.expensename_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -473,8 +474,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label_expense;
+        private System.Windows.Forms.Label label_expense_title;
         private System.Windows.Forms.PictureBox pictureBox17;
     }
 }

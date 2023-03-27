@@ -19,6 +19,7 @@ namespace Expense
         public Form2()
         {
             InitializeComponent();
+            totalIncome();
         }
 
         private void pictureBox17_Click(object sender, EventArgs e)
@@ -109,7 +110,19 @@ namespace Expense
                 }
             }
         }
+        private void totalIncome()
+        {
+            connection.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter("select Sum(Income_Amount) from tbl_Income where Income_User= @username", connection);
+            adapter.SelectCommand.Parameters.AddWithValue("@username", Form6.User);
+            DataTable datatable = new DataTable();
+            adapter.Fill(datatable);
 
+            label_income.Text += datatable.Rows[0][0].ToString();
+
+            connection.Close();
+
+        }
         private void Form2_Load(object sender, EventArgs e)
         {
 

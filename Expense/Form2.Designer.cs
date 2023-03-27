@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.label30 = new System.Windows.Forms.Label();
+            this.label_income = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -72,18 +72,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
-            // label30
+            // label_income
             // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label30.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label30.Location = new System.Drawing.Point(1109, 121);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(69, 21);
-            this.label30.TabIndex = 84;
-            this.label30.Text = "Amount";
-            this.label30.Click += new System.EventHandler(this.label30_Click);
+            this.label_income.AutoSize = true;
+            this.label_income.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label_income.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_income.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label_income.Location = new System.Drawing.Point(1109, 121);
+            this.label_income.Name = "label_income";
+            this.label_income.Size = new System.Drawing.Size(69, 21);
+            this.label_income.TabIndex = 84;
+            this.label_income.Text = "Amount";
+            this.label_income.Click += new System.EventHandler(this.label30_Click);
             // 
             // label31
             // 
@@ -421,7 +421,7 @@
             this.Controls.Add(this.incomeamount);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.incomename);
-            this.Controls.Add(this.label30);
+            this.Controls.Add(this.label_income);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox7);
@@ -448,7 +448,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label_income;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.PictureBox pictureBox5;
