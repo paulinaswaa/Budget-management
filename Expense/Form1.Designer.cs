@@ -57,25 +57,25 @@
             this.label21 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.labelMaximumExpense = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.labelMaxIncome = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.label19 = new System.Windows.Forms.Label();
+            this.labelMinIncome = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label22 = new System.Windows.Forms.Label();
+            this.labelMinExpense = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.label26 = new System.Windows.Forms.Label();
+            this.labelBalance = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.label28 = new System.Windows.Forms.Label();
+            this.labelLastIncome = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.label30 = new System.Windows.Forms.Label();
+            this.labelLastExpense = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.label32 = new System.Windows.Forms.Label();
@@ -427,17 +427,17 @@
             this.labelMaximumExpense.TabIndex = 26;
             this.labelMaximumExpense.Text = "Amount";
             // 
-            // label17
+            // labelMaxIncome
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label17.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label17.Location = new System.Drawing.Point(722, 311);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(69, 21);
-            this.label17.TabIndex = 29;
-            this.label17.Text = "Amount";
+            this.labelMaxIncome.AutoSize = true;
+            this.labelMaxIncome.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelMaxIncome.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMaxIncome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelMaxIncome.Location = new System.Drawing.Point(722, 311);
+            this.labelMaxIncome.Name = "labelMaxIncome";
+            this.labelMaxIncome.Size = new System.Drawing.Size(69, 21);
+            this.labelMaxIncome.TabIndex = 29;
+            this.labelMaxIncome.Text = "Amount";
             // 
             // label18
             // 
@@ -460,17 +460,17 @@
             this.pictureBox11.TabIndex = 28;
             this.pictureBox11.TabStop = false;
             // 
-            // label19
+            // labelMinIncome
             // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label19.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(722, 536);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(69, 21);
-            this.label19.TabIndex = 35;
-            this.label19.Text = "Amount";
+            this.labelMinIncome.AutoSize = true;
+            this.labelMinIncome.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelMinIncome.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMinIncome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelMinIncome.Location = new System.Drawing.Point(722, 536);
+            this.labelMinIncome.Name = "labelMinIncome";
+            this.labelMinIncome.Size = new System.Drawing.Size(69, 21);
+            this.labelMinIncome.TabIndex = 35;
+            this.labelMinIncome.Text = "Amount";
             // 
             // label20
             // 
@@ -493,17 +493,17 @@
             this.pictureBox12.TabIndex = 34;
             this.pictureBox12.TabStop = false;
             // 
-            // label22
+            // labelMinExpense
             // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label22.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label22.Location = new System.Drawing.Point(722, 420);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(69, 21);
-            this.label22.TabIndex = 32;
-            this.label22.Text = "Amount";
+            this.labelMinExpense.AutoSize = true;
+            this.labelMinExpense.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelMinExpense.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMinExpense.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelMinExpense.Location = new System.Drawing.Point(722, 420);
+            this.labelMinExpense.Name = "labelMinExpense";
+            this.labelMinExpense.Size = new System.Drawing.Size(69, 21);
+            this.labelMinExpense.TabIndex = 32;
+            this.labelMinExpense.Text = "Amount";
             // 
             // label23
             // 
@@ -560,17 +560,17 @@
             this.pictureBox14.TabIndex = 46;
             this.pictureBox14.TabStop = false;
             // 
-            // label26
+            // labelBalance
             // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label26.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label26.Location = new System.Drawing.Point(1070, 420);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(69, 21);
-            this.label26.TabIndex = 44;
-            this.label26.Text = "Amount";
+            this.labelBalance.AutoSize = true;
+            this.labelBalance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelBalance.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBalance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelBalance.Location = new System.Drawing.Point(1070, 420);
+            this.labelBalance.Name = "labelBalance";
+            this.labelBalance.Size = new System.Drawing.Size(69, 21);
+            this.labelBalance.TabIndex = 44;
+            this.labelBalance.Text = "Amount";
             // 
             // label27
             // 
@@ -593,17 +593,17 @@
             this.pictureBox15.TabIndex = 43;
             this.pictureBox15.TabStop = false;
             // 
-            // label28
+            // labelLastIncome
             // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label28.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label28.Location = new System.Drawing.Point(1070, 311);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(69, 21);
-            this.label28.TabIndex = 41;
-            this.label28.Text = "Amount";
+            this.labelLastIncome.AutoSize = true;
+            this.labelLastIncome.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelLastIncome.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLastIncome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelLastIncome.Location = new System.Drawing.Point(967, 310);
+            this.labelLastIncome.Name = "labelLastIncome";
+            this.labelLastIncome.Size = new System.Drawing.Size(69, 21);
+            this.labelLastIncome.TabIndex = 41;
+            this.labelLastIncome.Text = "Amount";
             // 
             // label29
             // 
@@ -626,17 +626,17 @@
             this.pictureBox16.TabIndex = 40;
             this.pictureBox16.TabStop = false;
             // 
-            // label30
+            // labelLastExpense
             // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label30.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label30.Location = new System.Drawing.Point(1070, 195);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(69, 21);
-            this.label30.TabIndex = 38;
-            this.label30.Text = "Amount";
+            this.labelLastExpense.AutoSize = true;
+            this.labelLastExpense.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelLastExpense.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLastExpense.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelLastExpense.Location = new System.Drawing.Point(967, 195);
+            this.labelLastExpense.Name = "labelLastExpense";
+            this.labelLastExpense.Size = new System.Drawing.Size(69, 21);
+            this.labelLastExpense.TabIndex = 38;
+            this.labelLastExpense.Text = "Amount";
             // 
             // label31
             // 
@@ -790,22 +790,22 @@
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.pictureBox14);
-            this.Controls.Add(this.label26);
+            this.Controls.Add(this.labelBalance);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.label28);
+            this.Controls.Add(this.labelLastIncome);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.pictureBox16);
-            this.Controls.Add(this.label30);
+            this.Controls.Add(this.labelLastExpense);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.pictureBox17);
-            this.Controls.Add(this.label19);
+            this.Controls.Add(this.labelMinIncome);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.label22);
+            this.Controls.Add(this.labelMinExpense);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.label17);
+            this.Controls.Add(this.labelMaxIncome);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.labelMaximumExpense);
@@ -883,25 +883,25 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label labelMaximumExpense;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label labelMaxIncome;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label labelMinIncome;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label labelMinExpense;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label labelBalance;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label labelLastIncome;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label labelLastExpense;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Label label32;

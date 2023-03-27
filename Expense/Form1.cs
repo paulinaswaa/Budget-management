@@ -24,6 +24,10 @@ namespace Expense
             dateExpense();
             dateIncome();
             maxExpense();
+            minExpense();
+            maxIncome();
+            minIncome();
+            balance();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -98,11 +102,13 @@ namespace Expense
             adapter.SelectCommand.Parameters.AddWithValue("@username", Form6.User);
             DataTable datatable = new DataTable();
             adapter.Fill(datatable);
+            
             labelIncomeAmount.Text += datatable.Rows[0][0].ToString();
            
             connection.Close();
 
         }
+        
 
         private void countIncome()
         {
@@ -132,7 +138,7 @@ namespace Expense
 
 
 
-
+        
         private void sumExpense()
         {
             connection.Open();
@@ -154,6 +160,7 @@ namespace Expense
             DataTable datatable = new DataTable();
             adapter.Fill(datatable);
             labelIncomeDate.Text = datatable.Rows[0][0].ToString();
+            labelLastIncome.Text = datatable.Rows[0][0].ToString();
 
             connection.Close();
 
@@ -167,6 +174,7 @@ namespace Expense
             DataTable datatable = new DataTable();
             adapter.Fill(datatable);
             labelExpenseDate.Text = datatable.Rows[0][0].ToString();
+            labelLastExpense.Text = datatable.Rows[0][0].ToString();
 
             connection.Close();
 
@@ -183,6 +191,56 @@ namespace Expense
             connection.Close();
 
         }
+        private void minExpense()
+        {
+            connection.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter("select Min(Expense_Amount) from tbl_Expense where Expense_User= @username", connection);
+            adapter.SelectCommand.Parameters.AddWithValue("@username", Form6.User);
+            DataTable datatable = new DataTable();
+            adapter.Fill(datatable);
+            labelMinExpense.Text = datatable.Rows[0][0].ToString();
 
+            connection.Close();
+
+        }
+
+        private void maxIncome()
+        {
+            connection.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter("select Max(Income_Amount) from tbl_Income where Income_User= @username", connection);
+            adapter.SelectCommand.Parameters.AddWithValue("@username", Form6.User);
+            DataTable datatable = new DataTable();
+            adapter.Fill(datatable);
+            labelMaxIncome.Text = datatable.Rows[0][0].ToString();
+
+            connection.Close();
+
+        }
+
+        private void minIncome()
+        {
+            connection.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter("select Min(Income_Amount) from tbl_Income where Income_User= @username", connection);
+            adapter.SelectCommand.Parameters.AddWithValue("@username", Form6.User);
+            DataTable datatable = new DataTable();
+            adapter.Fill(datatable);
+            labelMinIncome.Text = datatable.Rows[0][0].ToString();
+
+            connection.Close();
+
+        }
+
+        private void balance()
+        {
+            connection.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter("SELECT (SELECT SUM(Income_Amount) FROM tbl_Income WHERE Income_User = @username)- (SELECT SUM(Expense_Amount) FROM tbl_Expense WHERE Expense_User = @username)", connection);
+            adapter.SelectCommand.Parameters.AddWithValue("@username", Form6.User);
+            DataTable datatable = new DataTable();
+            adapter.Fill(datatable);
+            labelBalance.Text = datatable.Rows[0][0].ToString();
+
+            connection.Close();
+
+        }
     }
 }
