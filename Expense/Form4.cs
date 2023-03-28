@@ -70,5 +70,56 @@ namespace Expense
             main.Show();
             this.Hide();
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(textBox1.Text) && comboBox1.SelectedIndex == -1)
+            {
+                connection.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM tbl_Income WHERE Income_Name LIKE '%' + @incomeName + '%'", connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@incomeName", textBox1.Text);
+                var display1 = new DataTable();
+                adapter.Fill(display1);
+                IncomeDatagridview.DataSource = display1;
+                connection.Close();
+            }
+            
+        
+            else if(string.IsNullOrEmpty(textBox1.Text) && comboBox1.SelectedIndex != -1)
+            {
+                connection.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM tbl_Income WHERE Income_Category = @incomeCategory ", connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@incomeCategory", comboBox1.SelectedItem);
+                var display1 = new DataTable();
+                adapter.Fill(display1);
+                IncomeDatagridview.DataSource = display1;
+                connection.Close();
+
+            }
+
+            else if(!string.IsNullOrEmpty(textBox1.Text) && comboBox1.SelectedIndex != -1)
+            {
+                connection.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM tbl_Income WHERE Income_Category = @incomeCategory AND Income_Name LIKE '%' + @incomeName + '%'", connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@incomeCategory", comboBox1.SelectedItem);
+                adapter.SelectCommand.Parameters.AddWithValue("@incomeName", textBox1.Text);
+                var display1 = new DataTable();
+                adapter.Fill(display1);
+                IncomeDatagridview.DataSource = display1;
+                connection.Close();
+            }
+
+            else
+            {
+                MessageBox.Show("Choose how you want to filter data!");
+            }
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            Display_Incomes();
+            textBox1.Text= string.Empty;
+            comboBox1.SelectedIndex = -1;
+        }
     }
 }

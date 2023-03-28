@@ -273,7 +273,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bahnschrift Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(319, 133);
+            this.label7.Location = new System.Drawing.Point(311, 133);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(129, 22);
             this.label7.TabIndex = 119;
@@ -283,7 +283,16 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(917, 133);
+            this.comboBox1.Items.AddRange(new object[] {
+            "Housing",
+            "Transportation",
+            "Food",
+            "Utilities",
+            "Insurance",
+            "Medical & Healthcare",
+            "Saving, Investing, & Debt Payments",
+            "Personal Spending"});
+            this.comboBox1.Location = new System.Drawing.Point(852, 133);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(271, 28);
             this.comboBox1.TabIndex = 121;
@@ -292,7 +301,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Bahnschrift Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(812, 134);
+            this.label9.Location = new System.Drawing.Point(747, 134);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(99, 22);
             this.label9.TabIndex = 120;

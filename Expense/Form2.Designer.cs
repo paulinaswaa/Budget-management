@@ -356,9 +356,11 @@
             this.incomecategories.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.incomecategories.FormattingEnabled = true;
             this.incomecategories.Items.AddRange(new object[] {
-            "Health",
-            "Food ",
-            "Entertainment "});
+            "Wages",
+            "Salary",
+            "Interest",
+            "Gift",
+            "Investments"});
             this.incomecategories.Location = new System.Drawing.Point(643, 169);
             this.incomecategories.Name = "incomecategories";
             this.incomecategories.Size = new System.Drawing.Size(271, 28);

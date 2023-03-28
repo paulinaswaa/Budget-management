@@ -116,9 +116,14 @@
             this.expensecategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.expensecategory.FormattingEnabled = true;
             this.expensecategory.Items.AddRange(new object[] {
+            "Housing",
+            "Transportation",
             "Food",
-            "Health",
-            "Clothes"});
+            "Utilities",
+            "Insurance",
+            "Medical & Healthcare",
+            "Saving, Investing, & Debt Payments",
+            "Personal Spending"});
             this.expensecategory.Location = new System.Drawing.Point(646, 169);
             this.expensecategory.Name = "expensecategory";
             this.expensecategory.Size = new System.Drawing.Size(271, 28);
