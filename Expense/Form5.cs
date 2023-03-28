@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Expense
 {
@@ -70,6 +71,57 @@ namespace Expense
             ExpensedataGridView.DataSource = display1.Tables[0];
             connection.Close();
 
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(textBox1ex.Text) && comboBox1exp.SelectedIndex == -1)
+            {
+                connection.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM tbl_Expense WHERE Expense_Name LIKE '%' + @expenseName + '%'", connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@expenseName", textBox1ex.Text);
+                var display1 = new DataTable();
+                adapter.Fill(display1);
+                ExpensedataGridView.DataSource = display1;
+                connection.Close();
+            }
+
+
+            else if (string.IsNullOrEmpty(textBox1ex.Text) && comboBox1exp.SelectedIndex != -1)
+            {
+                connection.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM tbl_Expense WHERE Expense_Category = @expenseCategory ", connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@expenseCategory", comboBox1exp.SelectedItem);
+                var display1 = new DataTable();
+                adapter.Fill(display1);
+                ExpensedataGridView.DataSource = display1;
+                connection.Close();
+
+            }
+
+            else if (!string.IsNullOrEmpty(textBox1ex.Text) && comboBox1exp.SelectedIndex != -1)
+            {
+                connection.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM tbl_Expense WHERE Expense_Category = @expenseCategory AND Expense_Name LIKE '%' + @expenseName + '%'", connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@expenseCategory", comboBox1exp.SelectedItem);
+                adapter.SelectCommand.Parameters.AddWithValue("@expenseName", textBox1ex.Text);
+                var display1 = new DataTable();
+                adapter.Fill(display1);
+                ExpensedataGridView.DataSource = display1;
+                connection.Close();
+            }
+
+            else
+            {
+                MessageBox.Show("Choose how you want to filter data!");
+            }
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            Display_Expenses();
+            textBox1ex.Text = string.Empty;
+            comboBox1exp.SelectedIndex = -1;
         }
     }
 }

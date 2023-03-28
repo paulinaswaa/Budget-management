@@ -82,7 +82,11 @@
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Food"});
+            "Wages",
+            "Salary",
+            "Interest",
+            "Gift",
+            "Investments"});
             this.comboBox1.Location = new System.Drawing.Point(834, 133);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(271, 28);
