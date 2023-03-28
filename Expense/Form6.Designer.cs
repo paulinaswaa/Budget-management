@@ -90,6 +90,9 @@
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(271, 30);
             this.password.TabIndex = 117;
+            this.password.UseSystemPasswordChar = true;
+            this.password.WordWrap = false;
+            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
             // 
             // username
             // 
