@@ -111,5 +111,12 @@ namespace Expense
             connection.Close();
 
         }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            Form6 main = new Form6();
+            main.Show();
+            this.Hide();
+        }
     }
 }

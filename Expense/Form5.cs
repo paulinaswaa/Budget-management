@@ -123,5 +123,12 @@ namespace Expense
             textBox1ex.Text = string.Empty;
             comboBox1exp.SelectedIndex = -1;
         }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            Form6 main = new Form6();
+            main.Show();
+            this.Hide();
+        }
     }
 }

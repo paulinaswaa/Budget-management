@@ -64,5 +64,12 @@ namespace Expense
                 }
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Form6 main = new Form6();
+            main.Show();
+            this.Hide();
+        }
     }
 }

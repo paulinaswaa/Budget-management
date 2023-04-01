@@ -178,6 +178,7 @@
             this.label3.Size = new System.Drawing.Size(35, 16);
             this.label3.TabIndex = 137;
             this.label3.Text = "Back";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form7
             // 
